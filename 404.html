@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>SURLY | RUBI WORKSHOP</title>
+<meta name="robots" content="noindex">
+<script>
+  // 하위 주소(/midnight-special, /en/straggler, /ja/disc-trucker ...)를 원페이지 섹션으로 연결
+  // github.io 미리보기(/surly/)와 자체 도메인(/) 모두 동작
+  var base = location.hostname.slice(-10) === 'github.io' ? '/surly/' : '/';
+  var parts = location.pathname.slice(base.length).replace(/\/$/, '').toLowerCase().split('/');
+  var lang = (parts[0] === 'en' || parts[0] === 'ja') ? parts.shift() + '/' : '';
+  var key = parts.join('/');
+  var alias = { 'midnight-special':'midnight', 'midnightspecial':'midnight', 'ms':'midnight', 'disc-trucker':'trucker', 'disctrucker':'trucker', 'dt':'trucker', 'lht':'trucker', 'long-haul-trucker':'trucker', 'about':'brand', 'surly':'brand', 'contact':'showroom', 'consulting':'showroom', 'lineup':'range', 'models':'range' };
+  var map = { brand:1, range:1, midnight:1, preamble:1, straggler:1, trucker:1, showroom:1 };
+  key = alias[key] || key;
+  location.replace(base + lang + (map[key] ? '#' + key : ''));
+</script>
+<style>body{background:#f3f1ec}</style>
+</head>
+<body></body>
+</html>
