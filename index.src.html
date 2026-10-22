@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- Google Analytics 4 (shared across Rubi Company brand sites)
+     Put the measurement ID in GA_ID. Empty = GA is not loaded. -->
+<script>
+  var GA_ID = '';
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (/^G-[A-Z0-9]{4,}$/.test(GA_ID)) {
+    var gs = document.createElement('script');
+    gs.async = true;
+    gs.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(gs);
+    gtag('js', new Date());
+    gtag('config', GA_ID, { content_group: document.documentElement.lang || 'ko' });
+  }
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>설리 | Surly Bikes · 루비워크샵</title>
+<meta name="description" content="설리(Surly)는 미국 미네소타의 스틸 자전거 브랜드입니다. 로드 플러스 미드나잇 스페셜, 입문용 프리앰블, 그래블 스트래글러, 투어링 디스크 트러커를 루비워크샵에서 만나보세요.">
+<meta name="keywords" content="설리,설리 자전거,Surly,Surly Bikes,미드나잇 스페셜,Midnight Special,프리앰블,Preamble,스트래글러,Straggler,디스크 트러커,Disc Trucker,크로몰리,스틸 자전거,그래블,투어링 자전거,루비워크샵">
+<meta name="theme-color" content="#121212">
+<link rel="canonical" href="https://surly.rubiworkshop.com/">
+{{HREFLANG}}
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://surly.rubiworkshop.com/">
+<meta property="og:title" content="설리 | Surly Bikes · 루비워크샵">
+<meta property="og:description" content="레이스보다 일상, 유행보다 쓸모. 미국 미네소타의 스틸 자전거, 설리.">
+<meta property="og:image" content="https://surly.rubiworkshop.com/images/og.jpg">
+<meta property="og:site_name" content="설리 · 루비워크샵">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="설리 | Surly Bikes · 루비워크샵">
+<meta name="twitter:description" content="레이스보다 일상, 유행보다 쓸모. 미국 미네소타의 스틸 자전거, 설리.">
+<meta name="twitter:image" content="https://surly.rubiworkshop.com/images/og.jpg">
+<meta name="robots" content="index,follow">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23121212'/%3E%3Ctext x='32' y='46' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='40' fill='%23fff' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://surly.rubiworkshop.com/#organization",
+      "name": "루비워크샵",
+      "alternateName": ["Rubi Workshop", "루비워크샵 설리"],
+      "url": "https://surly.rubiworkshop.com/",
+      "email": "help@rubi.kr",
+      "telephone": "+82-1551-5320",
+      "address": { "@type": "PostalAddress", "streetAddress": "신반포로 320 루비빌딩", "addressLocality": "서초구", "addressRegion": "서울특별시", "addressCountry": "KR" },
+      "parentOrganization": { "@type": "Organization", "name": "루비컴퍼니", "alternateName": "Rubi Company", "url": "https://rubi.kr/" },
+      "sameAs": ["https://instagram.com/rubi.workshop", "https://rubiworkshop.com/"]
+    },
+    { "@type": "WebSite", "@id": "https://surly.rubiworkshop.com/#website", "url": "https://surly.rubiworkshop.com/", "name": "설리 · 루비워크샵", "inLanguage": "ko-KR", "publisher": { "@id": "https://surly.rubiworkshop.com/#organization" } },
+    { "@type": "Product", "name": "설리 미드나잇 스페셜 (Surly Midnight Special)", "brand": { "@type": "Brand", "name": "Surly Bikes" }, "category": "크로몰리 엔듀런스 로드 바이크", "image": "https://surly.rubiworkshop.com/images/midnight/side.jpg", "description": "650B x 50mm 타이어 기준의 로드 플러스 바이크. 700C x 42mm 대응, 12mm 스루액슬, 플랫 마운트 디스크." },
+    { "@type": "Product", "name": "설리 프리앰블 (Surly Preamble)", "brand": { "@type": "Brand", "name": "Surly Bikes" }, "category": "크로몰리 시티 · 출퇴근 바이크", "image": "https://surly.rubiworkshop.com/images/preamble/side.jpg", "description": "설리의 입문용 스틸 바이크. 플랫바와 드롭바 버전, XS·S 650B / M~XL 700C, 최대 41mm 타이어." },
+    { "@type": "Product", "name": "설리 스트래글러 (Surly Straggler)", "brand": { "@type": "Brand", "name": "Surly Bikes" }, "category": "크로몰리 그래블 바이크", "image": "https://surly.rubiworkshop.com/images/straggler/side.jpg", "description": "50mm 타이어 클리어런스의 그래블 바이크. 12mm 스루액슬, 플랫 마운트 디스크, 드로퍼 내부 라우팅." },
+    { "@type": "Product", "name": "설리 디스크 트러커 (Surly Disc Trucker)", "brand": { "@type": "Brand", "name": "Surly Bikes" }, "category": "크로몰리 투어링 바이크", "image": "https://surly.rubiworkshop.com/images/trucker/side.jpg", "description": "짐을 싣고 장거리를 달리는 드롭바 투어링 바이크. 42~54 26인치, 56~64 700C, 최대 47mm 타이어." }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+@font-face{font-family:'GmarketSans';font-weight:300;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff')}
+@font-face{font-family:'GmarketSans';font-weight:500;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff')}
+@font-face{font-family:'GmarketSans';font-weight:700;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff')}
+@font-face{font-family:'SCoreDream';font-weight:300;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff')}
+@font-face{font-family:'SCoreDream';font-weight:400;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff')}
+@font-face{font-family:'SCoreDream';font-weight:500;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff')}
+@font-face{font-family:'SCoreDream';font-weight:700;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff')}
+:root{
+  --bg:#f3f1ec;
+  --paper:#e8e5de;
+  --line:#d3cec4;
+  --text:#33322f;
+  --muted:#86827a;
+  --strong:#121212;
+  --accent:#e5481f;
+  --gutter:clamp(16px,5vw,80px);
+  --max:1280px;
+  --hd:68px;
+  --en:'GmarketSans','SCoreDream',sans-serif;
+  --ko:'SCoreDream','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hd);-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font:400 15px/1.85 var(--ko);word-break:keep-all;overflow-x:hidden}
+html[lang=ja]{--ko:'Noto Sans JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif}
+html[lang=ja] body{word-break:normal;line-break:strict}
+html[lang=en] body{word-break:normal}
+img{display:block;width:100%;height:auto;background:var(--paper)}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#fff}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ---------- Header ---------- */
+.hd{position:fixed;inset:0 0 auto;z-index:50;height:var(--hd);display:flex;align-items:center;justify-content:center;background:var(--strong);color:#fff}
+.hd .logo{height:26px;display:flex;align-items:center}
+.hd .logo img{height:100%;width:auto;background:none;color:#fff;font:700 18px var(--en);letter-spacing:2px}
+.burger{position:absolute;left:var(--gutter);top:50%;transform:translateY(-50%);width:26px;height:16px;background:none;border:0;cursor:pointer}
+.burger span{position:absolute;left:0;width:100%;height:2px;background:#fff;transition:.35s}
+.burger span:nth-child(1){top:0}.burger span:nth-child(2){top:7px}.burger span:nth-child(3){top:14px}
+body.menu-open .burger span:nth-child(1){top:7px;transform:rotate(45deg)}
+body.menu-open .burger span:nth-child(2){opacity:0}
+body.menu-open .burger span:nth-child(3){top:7px;transform:rotate(-45deg)}
+.hd-r{position:absolute;right:var(--gutter);top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:28px}
+.lang{display:flex;gap:12px;font:500 11px var(--en);letter-spacing:1.5px}
+.lang a{color:#8a8780;transition:color .2s}
+.lang a:hover{color:var(--accent)}
+.lang a.on{color:#fff}
+.hd .cta-top{font:700 12px var(--en);letter-spacing:2px;color:#fff;border-bottom:2px solid var(--accent);padding-bottom:1px}
+
+/* ---------- Overlay menu ---------- */
+.menu{position:fixed;inset:var(--hd) 0 0;z-index:40;background:var(--bg);display:flex;flex-direction:column;justify-content:center;padding:0 var(--gutter);opacity:0;visibility:hidden;transition:.45s}
+body.menu-open .menu{opacity:1;visibility:visible}
+.menu a{font:700 clamp(34px,6vw,76px)/1.12 var(--en);text-transform:uppercase;letter-spacing:-1px;color:#c9c4ba;transition:color .25s;max-width:100%}
+.menu a:hover,.menu a.on{color:var(--accent)}
+.menu a small{font:500 13px var(--en);letter-spacing:2px;vertical-align:top;margin-right:14px;color:var(--muted)}
+.menu .menu-foot{position:absolute;bottom:40px;left:var(--gutter);font:500 12px var(--en);letter-spacing:1px;color:var(--muted)}
+
+/* ---------- Dot nav ---------- */
+.dots{position:fixed;right:28px;top:50%;transform:translateY(-50%);z-index:45;display:flex;flex-direction:column;gap:14px}
+.dots a{position:relative;display:block;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--strong);transition:.3s;background:var(--bg)}
+.dots a.on{background:var(--accent);border-color:var(--accent)}
+.dots a::after{content:attr(data-label);position:absolute;right:18px;top:50%;transform:translateY(-50%);font:700 10px var(--en);letter-spacing:2px;color:var(--strong);opacity:0;transition:.3s;white-space:nowrap}
+.dots a:hover::after,.dots a.on::after{opacity:.9}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding-top:var(--hd);display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr)}
+.hero-copy{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:0 clamp(24px,4vw,56px) 96px var(--gutter)}
+.cap{position:absolute;left:var(--gutter);right:clamp(24px,4vw,56px);bottom:96px;opacity:0;visibility:hidden;transition:opacity .8s,visibility .8s}
+.cap.on{opacity:1;visibility:visible}
+.cap small{display:block;font:700 12px var(--en);letter-spacing:4px;color:var(--accent);margin-bottom:12px}
+.cap h2{font:700 clamp(40px,4.6vw,76px)/.98 var(--en);text-transform:uppercase;color:var(--strong);letter-spacing:-1.5px}
+.cap p{margin-top:18px;font-size:16px;color:var(--text)}
+.cap .more{display:inline-block;margin-top:22px;font:700 13px var(--en);letter-spacing:1px;color:var(--strong);border-bottom:2px solid var(--accent)}
+.cap>*{transform:translateY(14px);transition:transform .9s .2s}
+.cap.on>*{transform:none}
+.hero-media{position:relative;overflow:hidden;background:var(--paper);aspect-ratio:16/9;max-height:calc(100svh - var(--hd))}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.04);transition:opacity 1.2s ease,transform 7s ease}
+.slide.on{opacity:1;transform:scale(1)}
+.hero-idx{position:absolute;left:var(--gutter);bottom:40px;z-index:3;display:flex;gap:10px;align-items:center}
+.hero-idx button{width:36px;height:3px;border:0;background:var(--line);cursor:pointer;position:relative;overflow:hidden}
+.hero-idx button i{position:absolute;inset:0;background:var(--accent);transform:scaleX(0);transform-origin:left}
+.hero-idx button.on i{animation:prog 6s linear forwards}
+@keyframes prog{to{transform:scaleX(1)}}
+.marquee{grid-column:1/-1;position:absolute;left:0;right:0;bottom:0;transform:translateY(100%);background:var(--strong);color:#fff;overflow:hidden;white-space:nowrap;font:500 13px/44px var(--en);letter-spacing:3px;text-transform:uppercase;z-index:4}
+.marquee div{display:inline-block;animation:mq 44s linear infinite}
+.marquee span{padding:0 26px}
+.marquee span:nth-child(odd){color:var(--accent)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- Section commons ---------- */
+section.sec{padding:clamp(110px,14vw,190px) var(--gutter) 0}
+.wrap{max-width:var(--max);margin:0 auto}
+.label{display:flex;align-items:center;gap:16px;font:700 12px var(--en);letter-spacing:3px;color:var(--accent);margin-bottom:24px}
+.label::after{content:"";flex:1;height:1px;background:var(--line)}
+.sec-title{font:700 clamp(46px,7.4vw,112px)/.94 var(--en);text-transform:uppercase;color:var(--strong);letter-spacing:-2px;margin-bottom:clamp(40px,6vw,72px)}
+.sec-title span{display:block;font:500 clamp(13px,1.2vw,15px) var(--ko);text-transform:none;letter-spacing:2px;color:var(--muted);margin-top:22px}
+.lead{font-size:clamp(20px,2.4vw,30px);line-height:1.5;font-weight:700;color:var(--strong)}
+.body{max-width:640px}
+.body p+p{margin-top:1.4em}
+.cols-2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);align-items:start}
+.full{margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1)}
+.full img{aspect-ratio:21/9;object-fit:cover}
+.gap-l{margin-top:clamp(64px,9vw,120px)}
+.gap-m{margin-top:clamp(40px,5vw,64px)}
+.eyebrow{display:block;font:700 11px var(--en);letter-spacing:3px;color:var(--accent);margin-bottom:10px}
+.sub-head{font:700 clamp(28px,3.6vw,48px)/1 var(--en);text-transform:uppercase;letter-spacing:-1px;color:var(--strong)}
+.sub-head span{display:block;font:400 14px/1.6 var(--ko);text-transform:none;color:var(--muted);margin-top:10px;letter-spacing:0}
+.note{font-size:12px;color:var(--muted);margin-top:14px}
+.tagline{text-align:center;padding:clamp(80px,10vw,140px) 0 0}
+.tagline small{display:block;font:700 12px var(--en);letter-spacing:4px;color:var(--accent);margin-bottom:18px}
+.tagline h3{font:700 clamp(26px,3.6vw,52px)/1.08 var(--en);text-transform:uppercase;letter-spacing:-1.5px;color:var(--strong);max-width:1000px;margin:0 auto}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+.reveal.in{opacity:1;transform:none}
+figure.zoom{overflow:hidden;cursor:zoom-in}
+figure.zoom img{transition:transform 1.2s ease}
+figure.zoom:hover img{transform:scale(1.03)}
+
+/* ---------- Brand ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--strong);border-bottom:1px solid var(--line)}
+.stats div{padding:26px 0;border-right:1px solid var(--line);padding-left:clamp(14px,2vw,28px)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font:700 19px/1.15 var(--en);color:var(--strong);text-transform:uppercase;margin-bottom:8px}
+.stats span{font-size:13px;color:var(--muted)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,40px)}
+.pillars h4{font:700 22px/1.1 var(--en);text-transform:uppercase;color:var(--strong);padding-bottom:14px;margin-bottom:16px;border-bottom:2px solid var(--strong)}
+.pillars h4 small{display:block;font:700 11px var(--en);letter-spacing:3px;color:var(--accent);margin-bottom:8px}
+.pillars p{font-size:14px}
+.founder{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,5vw,80px);align-items:start}
+.founder .say p+p{margin-top:1.3em}
+.founder .say .first{font-size:clamp(18px,2vw,24px);line-height:1.6;color:var(--strong);font-weight:700}
+.story{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.story article{background:var(--bg);padding:clamp(22px,2.4vw,32px)}
+.story b{display:block;font:700 38px/1 var(--en);color:var(--accent);margin-bottom:14px;letter-spacing:-1px}
+.story h4{font:700 12px var(--en);letter-spacing:2px;text-transform:uppercase;color:var(--strong);margin-bottom:8px}
+.story p{font-size:14px}
+.range{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.range a{background:var(--bg);transition:background .3s;display:flex;flex-direction:column}
+.range a:hover{background:var(--paper)}
+.range .pic{background:#fff;padding:8% 6%;border-bottom:1px solid var(--line)}
+.range .pic img{aspect-ratio:3/2;object-fit:contain;background:#fff;transition:transform .6s ease}
+.range a:hover .pic img{transform:translateX(4px)}
+.range .txt{padding:clamp(22px,2.4vw,32px);display:flex;flex-direction:column;flex:1}
+.range small{font:700 11px var(--en);letter-spacing:3px;color:var(--accent)}
+.range h4{font:700 28px/1.02 var(--en);text-transform:uppercase;letter-spacing:-.5px;color:var(--strong);margin:12px 0 14px}
+.range p{font-size:14px;flex:1}
+.range dl{display:flex;gap:24px;margin-top:22px;font:500 12px var(--ko);color:var(--muted)}
+.range dd{font:700 18px var(--en);color:var(--strong);margin-top:2px}
+.range .go{display:inline-block;margin-top:22px;font:700 12px var(--en);letter-spacing:2px;color:var(--strong);border-bottom:2px solid var(--accent);width:max-content}
+
+/* ---------- Model rows ---------- */
+.row{display:grid;grid-template-columns:7fr 5fr;gap:clamp(32px,5vw,80px);align-items:center}
+.row.flip{grid-template-columns:5fr 7fr}
+.row.flip figure{order:2}
+.row h3{font:700 clamp(24px,2.8vw,34px)/1.3 var(--ko);color:var(--strong);margin-bottom:22px}
+.row p+p{margin-top:1.2em}
+.feat4{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,2.4vw,36px)}
+.feat4 h4{font-size:16px;color:var(--strong);font-weight:700;padding-bottom:12px;margin-bottom:14px;border-bottom:2px solid var(--strong)}
+.feat4 p{font-size:14px}
+.studio{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.studio figure{background:#fff;padding:5%;position:relative}
+.studio img{aspect-ratio:3/2;object-fit:contain;background:#fff}
+.studio figcaption{position:absolute;left:16px;top:12px;font:700 11px var(--en);letter-spacing:2px;color:var(--muted)}
+
+/* ---------- Rails ---------- */
+.rail-hint{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}
+.rail-hint>div{min-width:0}
+.rail-hint>span{font:700 11px var(--en);letter-spacing:2px;color:var(--muted);white-space:nowrap}
+.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--gutter) 20px;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.strip.drag{cursor:grabbing;scroll-snap-type:none}
+.strip figure{flex:0 0 clamp(280px,38vw,540px);scroll-snap-align:start;position:relative}
+.strip figure img{aspect-ratio:3/2;object-fit:cover;pointer-events:none}
+.strip figcaption{position:absolute;left:12px;top:10px;font:700 11px var(--en);letter-spacing:2px;color:#fff;mix-blend-mode:difference}
+
+/* ---------- Spec / geometry ---------- */
+.spec{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px);align-items:start}
+table{width:100%;border-collapse:collapse;border-top:2px solid var(--strong)}
+th,td{padding:14px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}
+th{width:30%;font-weight:700;color:var(--strong);padding-right:16px}
+.btn{display:inline-flex;align-items:center;gap:12px;margin-top:36px;padding:16px 30px;background:var(--strong);color:var(--bg);font:700 13px var(--ko);letter-spacing:1px;transition:.3s;border:0;cursor:pointer}
+.btn:hover{background:var(--accent);color:#fff}
+.geo-wrap{overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+table.geo{min-width:720px;table-layout:fixed}
+table.geo th{width:auto}
+table.geo thead th:first-child,table.geo tbody th{width:150px}
+table.geo th,table.geo td{padding:10px 8px;font-size:13px;text-align:center;font-family:var(--en)}
+table.geo thead th{color:var(--strong);font-weight:700;letter-spacing:1px;border-bottom:2px solid var(--strong)}
+table.geo thead th small{display:block;font-weight:300;color:var(--muted);font-size:10px;letter-spacing:.5px}
+table.geo tbody th{text-align:left;font-weight:400;color:var(--text);font-family:var(--ko);padding-left:0;white-space:nowrap;position:sticky;left:0;background:var(--bg)}
+table.geo tbody tr:last-child th,table.geo tbody tr:last-child td{color:var(--accent);font-weight:700}
+table.geo tbody tr:hover td,table.geo tbody tr:hover th{color:var(--accent)}
+.tabs{display:flex;gap:28px;margin:28px 0 0;flex-wrap:wrap}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;color:var(--muted);font:700 13px var(--en);letter-spacing:2px;padding:4px 0;cursor:pointer}
+.tabs button.on{color:var(--strong);border-color:var(--accent)}
+.geo-panel[hidden]{display:none}
+
+/* ---------- Showroom ---------- */
+.showinfo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px)}
+.showinfo h3{font:700 clamp(36px,4.4vw,64px)/.98 var(--en);text-transform:uppercase;letter-spacing:-1.5px;color:var(--strong);margin-bottom:20px}
+dl.info{display:grid;grid-template-columns:110px 1fr;border-top:2px solid var(--strong)}
+dl.info dt,dl.info dd{padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}
+dl.info dt{font:700 12px var(--en);letter-spacing:2px;color:var(--muted);padding-top:16px}
+dl.info dd strong{color:var(--strong)}
+
+/* ---------- Footer ---------- */
+footer{margin-top:clamp(120px,14vw,200px);background:var(--strong);padding:56px var(--gutter) 48px;font-size:13px;line-height:2;color:#8a8780}
+footer .wrap{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+footer h5{font:700 22px var(--en);color:#fff;margin-bottom:14px;letter-spacing:.5px}
+footer b{color:#c9c6bf;font-weight:700}
+footer .sns{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap}
+footer .sns a{font:700 12px var(--en);letter-spacing:2px;color:#fff;border-bottom:2px solid var(--accent);line-height:1.6}
+footer .copy{margin-top:28px;font-size:12px}
+
+/* ---------- Lightbox ---------- */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(243,241,236,.97);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:.35s}
+.lb.on{opacity:1;visibility:visible}
+.lb img{max-width:92vw;max-height:86vh;width:auto;object-fit:contain;background:none}
+.lb button{position:absolute;background:none;border:0;color:var(--strong);font:700 14px var(--en);letter-spacing:2px;cursor:pointer;padding:16px}
+.lb .cl{top:16px;right:16px}.lb .pv{left:8px;top:50%}.lb .nx{right:8px;top:50%}
+.lb .ct{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);font:500 12px var(--en);letter-spacing:2px;color:var(--muted)}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1000px){
+  .feat4{grid-template-columns:1fr 1fr}
+  .range,.story{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-media{order:-1;max-height:none}
+  .hero-copy{min-height:300px;padding-bottom:76px}
+  .cap{bottom:76px}
+  .hero-idx{bottom:30px}
+  .marquee{position:relative;transform:none}
+  .cols-2,.spec,.founder,.row,.row.flip,.showinfo{grid-template-columns:1fr}
+  .row.flip figure{order:0}
+  .pillars{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .stats div:nth-child(2){border-right:0}
+  .stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .full img{aspect-ratio:3/2}
+  .dots{right:10px}
+  .dots a::after{display:none}
+  .hd .cta-top{display:none}
+}
+@media (max-width:560px){
+  .hd .logo{height:22px}
+  .hd-r{gap:16px}
+  .feat4,.range,.story,.studio{grid-template-columns:1fr}
+  th{width:34%}
+  dl.info{grid-template-columns:90px 1fr}
+  .dots{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="hd" id="hd">
+  <button class="burger" id="burger" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+  <a href="#top" class="logo" aria-label="SURLY 홈"><img src="images/logo.svg" alt="SURLY"></a>
+  <div class="hd-r"><nav class="lang" aria-label="Language">{{LANG}}</nav><a href="https://rubiworkshop.com/models" class="cta-top" target="_blank" rel="noopener">CONSULTING</a></div>
+</header>
+
+<nav class="menu" id="menu" aria-label="섹션 메뉴">
+  <a href="#brand"><small>01</small>Surly</a>
+  <a href="#midnight"><small>02</small>Midnight Special</a>
+  <a href="#preamble"><small>03</small>Preamble</a>
+  <a href="#straggler"><small>04</small>Straggler</a>
+  <a href="#trucker"><small>05</small>Disc Trucker</a>
+  <a href="#showroom"><small>06</small>Showroom</a>
+  <div class="menu-foot">SURLY · RUBI WORKSHOP</div>
+</nav>
+
+<nav class="dots" id="dots" aria-label="페이지 위치">
+  <a href="#top" data-label="SURLY"></a>
+  <a href="#brand" data-label="BRAND"></a>
+  <a href="#midnight" data-label="MIDNIGHT SPECIAL"></a>
+  <a href="#preamble" data-label="PREAMBLE"></a>
+  <a href="#straggler" data-label="STRAGGLER"></a>
+  <a href="#trucker" data-label="DISC TRUCKER"></a>
+  <a href="#showroom" data-label="SHOWROOM"></a>
+</nav>
+
+<main>
+<h1 class="sr-only">설리 | Surly Bikes · 루비워크샵</h1>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top" data-sec>
+  <div class="hero-copy">
+    <div class="cap on"><small>ROAD PLUS</small><h2>Midnight<br>Special</h2><p>포장도로를 빠르고 편하게, 가끔은 그래블까지</p><a class="more" href="#midnight">MORE INFO &gt;</a></div>
+    <div class="cap"><small>CITY · COMMUTE</small><h2>Preamble</h2><p>매일 타는 설리의 첫 스틸 바이크</p><a class="more" href="#preamble">MORE INFO &gt;</a></div>
+    <div class="cap"><small>GRAVEL · ALL-ROAD</small><h2>Straggler</h2><p>포장도로가 끝나는 곳에서 시작하는 그래블 바이크</p><a class="more" href="#straggler">MORE INFO &gt;</a></div>
+    <div class="cap"><small>LOADED TOURING</small><h2>Disc<br>Trucker</h2><p>짐을 싣고 세계 어디든 가는 투어링 바이크</p><a class="more" href="#trucker">MORE INFO &gt;</a></div>
+    <div class="hero-idx" id="heroIdx"></div>
+  </div>
+  <div class="hero-media">
+    <div class="slide on" style="background-image:url(images/hero/01.jpg)"></div>
+    <div class="slide" style="background-image:url(images/hero/02.jpg)"></div>
+    <div class="slide" style="background-image:url(images/hero/03.jpg)"></div>
+    <div class="slide" style="background-image:url(images/hero/04.jpg)"></div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div><span>Serious steel bikes</span><span>for people who don't take themselves too seriously</span><span>Bloomington, Minnesota</span><span>Chromoly steel</span><span>Since 1998</span><span>Bikes. Parts. Chaos.</span><span>Serious steel bikes</span><span>for people who don't take themselves too seriously</span><span>Bloomington, Minnesota</span><span>Chromoly steel</span><span>Since 1998</span><span>Bikes. Parts. Chaos.</span></div></div>
+</section>
+
+<!-- ===== 01 BRAND ===== -->
+<section class="sec" id="brand" data-sec>
+  <div class="wrap">
+    <div class="label reveal">01</div>
+    <h2 class="sec-title reveal">Surly<span>MINNESOTA, USA · SINCE 1998</span></h2>
+    <div class="cols-2">
+      <p class="lead reveal">레이스보다 일상,<br>유행보다 쓸모.<br>스틸로 답하는 설리의 방식.</p>
+      <div class="body reveal">
+        <p>설리(Surly)는 미국 미네소타의 자전거 유통사 QBP(Quality Bicycle Products) 안에서 출발한 스틸 자전거 브랜드입니다. 1998년 싱글스피드 프레임 1x1을 담은 첫 카탈로그를 냈고, 이듬해부터 설리라는 이름을 썼습니다. 처음부터 목표는 가볍고 빠른 레이스 바이크가 아니라 오래 타고, 많이 싣고, 어디든 가는 자전거였습니다.</p>
+        <p>29인치 산악자전거, 팻바이크, 롱테일 카고 바이크처럼 당시에는 낯설던 장르를 설리는 일찍부터 만들어 왔습니다. 진지하게 설계하되 스스로를 너무 진지하게 여기지 않는 태도, 그 유머 감각도 설리를 설리답게 만드는 부분입니다.</p>
+      </div>
+    </div>
+    <div class="stats gap-l reveal">
+      <div><b>Bloomington, MN</b><span>미국 미네소타 블루밍턴에서 설계</span></div>
+      <div><b>Chromoly steel</b><span>모델마다 용도에 맞춘 크로몰리 튜빙</span></div>
+      <div><b>Since 1998</b><span>싱글스피드 프레임 1x1에서 시작</span></div>
+      <div><b>B Corp</b><span>모회사 QBP와 함께 B Corp 인증</span></div>
+    </div>
+  </div>
+
+  <figure class="full gap-l reveal zoom" data-gallery="brand-wide"><img src="images/brand/01.jpg" alt="호숫가의 설리 라이더들" loading="lazy"></figure>
+
+  <div class="wrap gap-l">
+    <div class="pillars">
+      <div class="reveal"><h4><small>MATERIAL</small>Steel, by design</h4><p>설리는 스틸이 자신들이 설계하고 타는 자전거에 가장 잘 맞는 소재라고 말합니다. 모델마다 쓰임에 맞춰 튜빙을 고르고, 그렇게 만든 편안한 승차감을 '설리 라이드'라고 부릅니다.</p></div>
+      <div class="reveal"><h4><small>VERSATILITY</small>Built for use</h4><p>넉넉한 타이어 클리어런스와 랙, 펜더, 보틀 마운트. 출퇴근부터 장거리 여행까지 한 대로 여러 쓰임을 소화하도록 만듭니다.</p></div>
+      <div class="reveal"><h4><small>ATTITUDE</small>No uniform required</h4><p>저지와 클릿이 없어도, 평상복 그대로 타면 됩니다. 체형도 목적도 다른 누구나 탈 수 있도록 사이즈와 휠 크기를 넓게 둡니다.</p></div>
+    </div>
+
+    <div class="founder gap-l">
+      <div class="reveal" data-gallery="founder"><figure class="zoom"><img src="images/brand/02.jpg" alt="짐을 싣고 나무 옆에 세워 둔 설리 투어링 바이크" loading="lazy"></figure></div>
+      <div class="say reveal">
+        <span class="eyebrow">HOW IT STARTED</span>
+        <p class="first">기어 많은 자전거가 유행하던 1998년, 설리의 첫 프레임은 기어 하나뿐인 싱글스피드였습니다.</p>
+        <p>첫 카탈로그에는 싱글스피드 프레임 1x1과 체인 텐셔너 싱글에이터(Singleator)가 실렸습니다. 이후 올라운드 바이크 크로스체크(2000), 29인치 산악자전거 카라테 몽키(2003), 투어링 프레임 롱 홀 트러커(2004), 팻바이크 퍼그슬리(2005)로 이어지며 설리는 쓰임새가 분명한 스틸 자전거의 대명사가 되었습니다.</p>
+        <p>지금의 라인업도 같은 생각 위에 있습니다. 루비워크샵이 주력으로 다루는 미드나잇 스페셜, 프리앰블, 스트래글러, 디스크 트러커는 매일의 포장도로부터 그래블, 장거리 투어링까지 설리의 '길 위' 라인을 대표하는 네 모델입니다.</p>
+      </div>
+    </div>
+
+    <div class="story gap-l reveal">
+      <article><b>1998</b><h4>The first catalog</h4><p>싱글스피드 프레임 1x1로 첫 카탈로그를 냅니다.</p></article>
+      <article><b>2004</b><h4>Long Haul Trucker</h4><p>디스크 트러커의 뿌리가 된 투어링 프레임이 나옵니다.</p></article>
+      <article><b>2005</b><h4>Pugsley</h4><p>굵은 타이어의 팻바이크 퍼그슬리로 새로운 장르를 엽니다.</p></article>
+      <article><b>2021</b><h4>B Corp</h4><p>모회사 QBP와 함께 B Corp 인증을 받습니다.</p></article>
+    </div>
+
+    <div class="tagline reveal">
+      <small>SURLY BIKES</small>
+      <h3>Serious steel bikes<br>for people who don't take<br>themselves too seriously.</h3>
+    </div>
+
+    <div class="gap-l" id="range">
+      <div class="rail-hint reveal"><div><span class="eyebrow">THE RANGE AT RUBI</span><p class="sub-head">Pick your road<span>루비워크샵이 주력으로 다루는 설리 네 모델입니다.</span></p></div></div>
+      <div class="range reveal">
+        <a href="#midnight"><div class="pic"><img src="images/midnight/side.jpg" alt="설리 미드나잇 스페셜" loading="lazy"></div><div class="txt"><small>01 · ROAD PLUS</small><h4>Midnight Special</h4><p>포장도로를 빠르고 편하게, 가끔 만나는 그래블까지. 굵은 650B 타이어의 엔듀런스 로드 바이크입니다.</p><dl><div><dt>휠</dt><dd>650B / 700C</dd></div><div><dt>기준 타이어</dt><dd>50mm</dd></div></dl><span class="go">EXPLORE →</span></div></a>
+        <a href="#preamble"><div class="pic"><img src="images/preamble/side.jpg" alt="설리 프리앰블" loading="lazy"></div><div class="txt"><small>02 · CITY &amp; COMMUTE</small><h4>Preamble</h4><p>설리 스틸 바이크의 입문. 출퇴근과 일상, 가벼운 그래블을 위한 플랫바·드롭바 두 가지 버전입니다.</p><dl><div><dt>휠</dt><dd>650B / 700C</dd></div><div><dt>최대 타이어</dt><dd>41mm</dd></div></dl><span class="go">EXPLORE →</span></div></a>
+        <a href="#straggler"><div class="pic"><img src="images/straggler/side.jpg" alt="설리 스트래글러" loading="lazy"></div><div class="txt"><small>03 · GRAVEL</small><h4>Straggler</h4><p>포장도로가 끝나는 곳에서 시작하는 설리의 그래블 바이크. 50mm 타이어와 안정적인 지오메트리를 갖췄습니다.</p><dl><div><dt>휠</dt><dd>650B / 700C</dd></div><div><dt>최대 타이어</dt><dd>50mm</dd></div></dl><span class="go">EXPLORE →</span></div></a>
+        <a href="#trucker"><div class="pic"><img src="images/trucker/side.jpg" alt="설리 디스크 트러커" loading="lazy"></div><div class="txt"><small>04 · TOURING</small><h4>Disc Trucker</h4><p>짐을 가득 싣고 세계 어디든. 수많은 장거리 여행으로 검증된 설리의 정통 드롭바 투어링 바이크입니다.</p><dl><div><dt>휠</dt><dd>26" / 700C</dd></div><div><dt>최대 타이어</dt><dd>47mm</dd></div></dl><span class="go">EXPLORE →</span></div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 MIDNIGHT SPECIAL ===== -->
+<section class="sec" id="midnight" data-sec>
+  <div class="wrap">
+    <div class="label reveal">02</div>
+    <h2 class="sec-title reveal">Midnight<br>Special<span>미드나잇 스페셜 · ROAD PLUS / ENDURANCE ROAD</span></h2>
+    <div class="cols-2">
+      <p class="lead reveal">빠르게, 편하게,<br>길이 거칠어져도<br>멈추지 않게.</p>
+      <div class="body reveal">
+        <p>미드나잇 스페셜(Midnight Special)은 설리가 '로드 플러스'라고 부르는 엔듀런스 로드 바이크입니다. 로드 바이크의 효율과 경쾌한 핸들링은 살리고, 하루 종일 달려도 편한 자세와 굵은 타이어로 승차감을 먼저 챙겼습니다.</p>
+        <p>650B×50mm 타이어를 기준으로 설계했고 700C는 42mm까지 들어갑니다. 갈라진 아스팔트와 포트홀, 예고 없이 나타나는 자갈길을 굵은 타이어가 받아 내고, 공기압을 낮춰 접지면을 넓힐 수 있습니다. 대부분 포장도로에 가끔 그래블이 섞이는 길이라면 미드나잇 스페셜, 그래블 비중이 높다면 스트래글러가 맞습니다.</p>
+      </div>
+    </div>
+  </div>
+  <figure class="full gap-l reveal zoom" data-gallery="midnight-wide"><img src="images/midnight/wide.jpg" alt="다리 위의 설리 미드나잇 스페셜" loading="lazy"></figure>
+  <div class="wrap gap-l">
+    <div class="feat4">
+      <div class="reveal"><h4>로드 플러스 타이어</h4><p>650B×50mm 기준 설계, 700C×42mm 대응. 펜더를 달아도 650B×50mm, 700C×38mm까지 들어갑니다.</p></div>
+      <div class="reveal"><h4>스루액슬 · 플랫 마운트</h4><p>앞뒤 12mm 스루액슬, 플랫 마운트 디스크 브레이크, 44mm 헤드튜브. 지금의 부품과 잘 맞는 규격입니다.</p></div>
+      <div class="reveal"><h4>랙 · 펜더 마운트</h4><p>보틀 마운트 3개와 앞뒤 랙·펜더 마운트로 긴 하루의 짐을 싣습니다. 다운튜브 시프터 보스도 남겨 두었습니다.</p></div>
+      <div class="reveal"><h4>8개 사이즈</h4><p>40부터 64까지 8개 사이즈로, 권장 신장 147cm부터 203cm까지 폭넓게 맞춥니다.</p></div>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="row">
+      <figure class="reveal zoom" data-gallery="midnight-row"><img src="images/midnight/01.jpg" alt="설리 미드나잇 스페셜 카본 포크" loading="lazy"></figure>
+      <div class="reveal">
+        <span class="eyebrow">STEEL MEETS CARBON</span>
+        <h3>설리 최초의<br>스틸 + 카본</h3>
+        <p>새 블랙 체리 피즈(Black Cherry Fizz) 700C 완성차는 설리가 처음으로 스틸 프레임에 카본을 짝지운 모델입니다. 살사 웍스윙(Waxwing) 카본 포크와 테라베일 카본 림으로 무게와 노면 진동을 덜었고, 프레임은 그대로 크로몰리 스틸입니다.</p>
+        <p>카본 포크에도 쓰리팩 마운트와 로라이더 랙 마운트가 있어 짐을 싣는 쓰임새는 그대로입니다. 프레임셋과 다른 완성차는 랙 마운트를 갖춘 크로몰리 포크를 씁니다.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="rail-hint reveal"><div><span class="eyebrow">GALLERY</span><p class="sub-head">Midnight Special up close<span>Black Cherry Fizz · Stainless Teal · Fool's Gold</span></p></div><span>DRAG →</span></div>
+  </div>
+  <div class="strip reveal" data-drag data-gallery="midnight">
+    <figure><img src="images/midnight/02.jpg" alt="설리 미드나잇 스페셜 1" loading="lazy"><figcaption>01</figcaption></figure>
+    <figure><img src="images/midnight/03.jpg" alt="설리 미드나잇 스페셜 2" loading="lazy"><figcaption>02</figcaption></figure>
+    <figure><img src="images/midnight/04.jpg" alt="설리 미드나잇 스페셜 3" loading="lazy"><figcaption>03</figcaption></figure>
+    <figure><img src="images/midnight/05.jpg" alt="설리 미드나잇 스페셜 4" loading="lazy"><figcaption>04</figcaption></figure>
+    <figure><img src="images/midnight/06.jpg" alt="설리 미드나잇 스페셜 5" loading="lazy"><figcaption>05</figcaption></figure>
+    <figure><img src="images/midnight/07.jpg" alt="설리 미드나잇 스페셜 6" loading="lazy"><figcaption>06</figcaption></figure>
+    <figure><img src="images/midnight/08.jpg" alt="설리 미드나잇 스페셜 7" loading="lazy"><figcaption>07</figcaption></figure>
+    <figure><img src="images/midnight/09.jpg" alt="설리 미드나잇 스페셜 8" loading="lazy"><figcaption>08</figcaption></figure>
+    <figure><img src="images/midnight/10.jpg" alt="설리 미드나잇 스페셜 9" loading="lazy"><figcaption>09</figcaption></figure>
+  </div>
+  <div class="wrap gap-l">
+    <div class="studio reveal" data-gallery="midnight-studio">
+      <figure class="zoom"><img src="images/midnight/side.jpg" alt="설리 미드나잇 스페셜 블랙 체리 피즈" loading="lazy"><figcaption>BLACK CHERRY FIZZ</figcaption></figure>
+      <figure class="zoom"><img src="images/midnight/side-teal.jpg" alt="설리 미드나잇 스페셜 스테인리스 틸" loading="lazy"><figcaption>STAINLESS TEAL</figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="spec">
+      <div class="reveal">
+        <h3 class="sub-head">Midnight Special<span>SPECIFICATION</span></h3>
+        <div class="tabs"><button class="on" data-tab="spec-midnight-frame">FRAMESET</button><button data-tab="spec-midnight-complete">COMPLETE</button></div>
+        <a class="btn" href="https://rubiworkshop.com/models" target="_blank" rel="noopener">미드나잇 스페셜 상담하기 →</a>
+      </div>
+      <div class="reveal">
+        <table class="geo-panel" id="spec-midnight-frame">
+          <tr><th>프레임</th><td>크로몰리 스틸 (Natch 튜빙), 더블 버티드 메인 트라이앵글, TIG 용접, ED 코팅</td></tr>
+          <tr><th>포크</th><td>4130 크로몰리, 러그 브레이징, A-C 400mm, 오프셋 50mm (40~54) / 40mm (56~64), 랙 마운트</td></tr>
+          <tr><th>타이어</th><td>650B×50mm (기준) / 700C×42mm, 펜더 장착 시 650B×50mm · 700C×38mm</td></tr>
+          <tr><th>액슬</th><td>앞 12×100mm / 뒤 12×142mm 스루액슬 (포함)</td></tr>
+          <tr><th>브레이크</th><td>플랫 마운트, 로터 최대 160mm</td></tr>
+          <tr><th>헤드셋</th><td>ZS44/28.6 · EC44/30, 1-1/8" 스티어러</td></tr>
+          <tr><th>바텀브라켓</th><td>68mm BSA</td></tr>
+          <tr><th>시트포스트</th><td>27.2mm, 시트 클램프 30.0mm</td></tr>
+          <tr><th>체인링</th><td>1x 44T / 2x 50/34T / 3x 50/39/30T (최대)</td></tr>
+          <tr><th>마운트</th><td>보틀 3, 앞뒤 랙 · 펜더, 다운튜브 시프터 보스</td></tr>
+          <tr><th>사이즈</th><td>40 / 46 / 50 / 54 / 56 / 58 / 60 / 64</td></tr>
+          <tr><th>컬러</th><td>Black Cherry Fizz / Stainless Teal</td></tr>
+        </table>
+        <table class="geo-panel" id="spec-midnight-complete" hidden>
+          <tr><th>Black Cherry Fizz</th><td>700C · 시마노 105 2×12 (50/34T, 11-34T), 105 유압 디스크, 살사 웍스윙 카본 포크, 테라베일 카본 림, 700×35mm 타이어 · 10.9kg (56)</td></tr>
+          <tr><th>Stainless Teal</th><td>700C · 시마노 티아그라 (50/34T, 11-36T), 티아그라 디스크 브레이크, 크로몰리 포크, 700×35mm 타이어 · 11.8kg (56)</td></tr>
+        </table>
+        <p class="note">완성차 구성과 컬러는 설리 2026년 기준입니다. 국내 입고 사양은 루비워크샵에 문의해 주세요.</p>
+      </div>
+    </div>
+    <div class="gap-l reveal">
+      <span class="eyebrow">FIT &amp; GEOMETRY</span>
+      <p class="sub-head" style="margin-bottom:28px">Find your size<span>단위 mm, 각도 ° · 모든 사이즈 650B×50mm 기준 설계</span></p>
+      <div class="geo-wrap">{{GEO_MIDNIGHT}}</div>
+      <p class="note">권장 신장은 설리 공식 가이드입니다. 정확한 사이즈는 루비워크샵 피팅 상담으로 안내해 드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 PREAMBLE ===== -->
+<section class="sec" id="preamble" data-sec>
+  <div class="wrap">
+    <div class="label reveal">03</div>
+    <h2 class="sec-title reveal">Preamble<span>프리앰블 · CITY / COMMUTE / LIGHT GRAVEL</span></h2>
+    <div class="cols-2">
+      <p class="lead reveal">설리의 첫 장,<br>매일 타는<br>스틸 자전거.</p>
+      <div class="body reveal">
+        <p>프리앰블(Preamble)은 설리 스틸 자전거의 입문 모델입니다. 출퇴근과 도심 주행, 일상적인 라이딩을 위해 만들었고, 많은 라이더가 쓰지 않는 조절식 드롭아웃이나 과한 마운트는 덜어 내 단순하고 합리적으로 구성했습니다.</p>
+        <p>더블 버티드 크로몰리 메인 트라이앵글이 포트홀과 거친 노면을 부드럽게 걸러 내고, 앞뒤 랙과 펜더, 보틀 케이지 두 개를 달 수 있어 비 오는 날 출근길도 문제없습니다. 도심에서 반응이 빠른 플랫바, 장거리와 맞바람에 유리한 드롭바 두 가지 버전이 있습니다.</p>
+      </div>
+    </div>
+  </div>
+  <figure class="full gap-l reveal zoom" data-gallery="preamble-wide"><img src="images/preamble/wide.jpg" alt="숲속 그래블 길의 설리 프리앰블" loading="lazy"></figure>
+  <div class="wrap gap-l">
+    <div class="feat4">
+      <div class="reveal"><h4>플랫바 또는 드롭바</h4><p>같은 프레임 지오메트리에 핸들바만 다릅니다. 도심 위주라면 플랫바, 장거리가 잦다면 드롭바.</p></div>
+      <div class="reveal"><h4>사이즈별 휠</h4><p>XS와 S는 650B 휠과 슬로핑 탑튜브로 스탠드오버를 낮췄고, M부터 XL은 700C를 씁니다.</p></div>
+      <div class="reveal"><h4>출퇴근 마운트</h4><p>앞뒤 랙, 앞뒤 펜더, 보틀 2개. 펜더를 달아도 41mm 타이어가 그대로 들어갑니다.</p></div>
+      <div class="reveal"><h4>라이트 그래블</h4><p>가끔 만나는 비포장 길까지. 30km가 넘는 그래블 라이딩이 잦다면 스트래글러를 권합니다.</p></div>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="row flip">
+      <figure class="reveal zoom" data-gallery="preamble-row"><img src="images/preamble/01.jpg" alt="벽화 앞의 설리 프리앰블" loading="lazy"></figure>
+      <div class="reveal">
+        <span class="eyebrow">MAKE IT YOUR OWN</span>
+        <h3>단순한 프레임,<br>나만의 빌드</h3>
+        <p>설리는 프리앰블을 커스텀 빌드의 출발점으로도 소개합니다. 공식 블로그에는 가벼운 부품으로 다시 꾸민 '임파서블 프리앰블' 같은 사례가 실려 있습니다.</p>
+        <p>루비워크샵에서는 완성차 그대로, 또는 프레임셋에 원하는 핸들바와 구동계, 바구니와 랙을 더해 일상에 맞는 한 대로 맞춰 드립니다.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="rail-hint reveal"><div><span class="eyebrow">GALLERY</span><p class="sub-head">Preamble every day<span>Red Hot Cheddar · Milky Lemonade · Best Buds Green</span></p></div><span>DRAG →</span></div>
+  </div>
+  <div class="strip reveal" data-drag data-gallery="preamble">
+    <figure><img src="images/preamble/02.jpg" alt="설리 프리앰블 1" loading="lazy"><figcaption>01</figcaption></figure>
+    <figure><img src="images/preamble/03.jpg" alt="설리 프리앰블 2" loading="lazy"><figcaption>02</figcaption></figure>
+    <figure><img src="images/preamble/04.jpg" alt="설리 프리앰블 3" loading="lazy"><figcaption>03</figcaption></figure>
+    <figure><img src="images/preamble/05.jpg" alt="설리 프리앰블 4" loading="lazy"><figcaption>04</figcaption></figure>
+    <figure><img src="images/preamble/06.jpg" alt="설리 프리앰블 5" loading="lazy"><figcaption>05</figcaption></figure>
+    <figure><img src="images/preamble/07.jpg" alt="설리 프리앰블 6" loading="lazy"><figcaption>06</figcaption></figure>
+    <figure><img src="images/preamble/08.jpg" alt="설리 프리앰블 7" loading="lazy"><figcaption>07</figcaption></figure>
+    <figure><img src="images/preamble/09.jpg" alt="설리 프리앰블 8" loading="lazy"><figcaption>08</figcaption></figure>
+    <figure><img src="images/preamble/10.jpg" alt="설리 프리앰블 9" loading="lazy"><figcaption>09</figcaption></figure>
+  </div>
+  <div class="wrap gap-l">
+    <div class="studio reveal" data-gallery="preamble-studio">
+      <figure class="zoom"><img src="images/preamble/side.jpg" alt="설리 프리앰블 드롭바 레드 핫 체다" loading="lazy"><figcaption>DROP BAR · RED HOT CHEDDAR</figcaption></figure>
+      <figure class="zoom"><img src="images/preamble/side-flat.jpg" alt="설리 프리앰블 플랫바 밀키 레모네이드" loading="lazy"><figcaption>FLAT BAR · MILKY LEMONADE</figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="spec">
+      <div class="reveal">
+        <h3 class="sub-head">Preamble<span>SPECIFICATION</span></h3>
+        <div class="tabs"><button class="on" data-tab="spec-preamble-frame">FRAMESET</button><button data-tab="spec-preamble-complete">COMPLETE</button></div>
+        <a class="btn" href="https://rubiworkshop.com/models" target="_blank" rel="noopener">프리앰블 상담하기 →</a>
+      </div>
+      <div class="reveal">
+        <table class="geo-panel" id="spec-preamble-frame">
+          <tr><th>프레임</th><td>크로몰리 스틸 (Natch 튜빙), 더블 버티드 메인 트라이앵글, TIG 용접, ED 코팅</td></tr>
+          <tr><th>포크</th><td>크로몰리, 테이퍼드 블레이드, 디스크 전용, A-C 380mm (XS·S) / 400mm (M~XL), 랙 · 펜더 마운트</td></tr>
+          <tr><th>타이어</th><td>650B×41mm (XS·S) / 700C×41mm (M~XL), 펜더 장착 시에도 동일</td></tr>
+          <tr><th>액슬</th><td>앞 10×100mm QR / 뒤 10×135mm 또는 10×141mm QR</td></tr>
+          <tr><th>브레이크</th><td>51mm IS 디스크 마운트, 로터 최대 앞 203mm / 뒤 180mm</td></tr>
+          <tr><th>헤드셋</th><td>EC34/28.6 · EC34/30, 1-1/8" 스티어러</td></tr>
+          <tr><th>바텀브라켓</th><td>68mm BSA</td></tr>
+          <tr><th>시트포스트</th><td>27.2mm, 시트 클램프 30.0mm</td></tr>
+          <tr><th>체인링</th><td>1x 42T / 2x 46/36T (최대)</td></tr>
+          <tr><th>마운트</th><td>보틀 2, 앞뒤 랙 · 펜더</td></tr>
+          <tr><th>사이즈</th><td>XS / S / M / L / XL</td></tr>
+          <tr><th>컬러</th><td>Black / Best Buds Green</td></tr>
+        </table>
+        <table class="geo-panel" id="spec-preamble-complete" hidden>
+          <tr><th>드롭바</th><td>Red Hot Cheddar · 시마노 CUES 1×10 (40T, 11-48T), 기계식 디스크 브레이크, 35mm 타이어 · 12.2kg (M)</td></tr>
+          <tr><th>플랫바</th><td>Hi-Viz Black / Milky Lemonade · 시마노 CUES 1×9 (40T, 11-46T), 유압 디스크 브레이크, 35mm 타이어 · 12.5kg (M)</td></tr>
+        </table>
+        <p class="note">XS와 S 완성차는 650B 휠, M부터 XL은 700C 휠로 나옵니다. 국내 입고 사양은 루비워크샵에 문의해 주세요.</p>
+      </div>
+    </div>
+    <div class="gap-l reveal">
+      <span class="eyebrow">FIT &amp; GEOMETRY</span>
+      <p class="sub-head" style="margin-bottom:28px">Find your size<span>단위 mm, 각도 ° · 플랫바와 드롭바 공통</span></p>
+      <div class="geo-wrap">{{GEO_PREAMBLE}}</div>
+      <p class="note">권장 신장은 설리 공식 가이드입니다. 정확한 사이즈는 루비워크샵 피팅 상담으로 안내해 드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 STRAGGLER ===== -->
+<section class="sec" id="straggler" data-sec>
+  <div class="wrap">
+    <div class="label reveal">04</div>
+    <h2 class="sec-title reveal">Straggler<span>스트래글러 · GRAVEL / ALL-ROAD</span></h2>
+    <div class="cols-2">
+      <p class="lead reveal">포장도로가 끝나는 곳,<br>스트래글러의<br>길이 시작됩니다.</p>
+      <div class="body reveal">
+        <p>스트래글러(Straggler)는 설리의 그래블 전용 바이크입니다. 설리 엔지니어들이 미국 중서부의 그래블 길에서 다듬었고, 길을 잘못 들어도 그 길을 하루짜리 모험으로 바꿔 버리는 라이더를 위해 만들었습니다.</p>
+        <p>50mm 타이어 클리어런스로 접지와 승차감을 챙기고, 긴 하루에도 흔들림 없는 안정적인 지오메트리를 갖췄습니다. 그래블까지 가는 포장도로 구간이 지루하지 않을 만큼 경쾌해서, 출퇴근과 가벼운 바이크패킹까지 한 대로 해결합니다.</p>
+      </div>
+    </div>
+  </div>
+  <figure class="full gap-l reveal zoom" data-gallery="straggler-wide"><img src="images/straggler/wide.jpg" alt="햇살 아래 그래블 길의 설리 스트래글러" loading="lazy"></figure>
+  <div class="wrap gap-l">
+    <div class="feat4">
+      <div class="reveal"><h4>50mm 타이어</h4><p>650B와 700C 모두 50mm까지, 펜더를 달아도 47mm까지 들어갑니다.</p></div>
+      <div class="reveal"><h4>스루액슬 · 플랫 마운트</h4><p>새 스트래글러는 앞뒤 12mm 스루액슬과 플랫 마운트 디스크 브레이크로 바뀌었습니다.</p></div>
+      <div class="reveal"><h4>드로퍼 대응</h4><p>드로퍼 포스트 내부 라우팅을 갖춰 거친 내리막에서 안장을 낮출 수 있습니다.</p></div>
+      <div class="reveal"><h4>짐 싣기</h4><p>보틀 마운트 2개와 쓰리팩 마운트 1개, 랙·펜더 마운트로 바이크패킹 장비를 싣습니다.</p></div>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="row">
+      <figure class="reveal zoom" data-gallery="straggler-row"><img src="images/straggler/01.jpg" alt="그래블 길가의 설리 스트래글러 섀기 카펫 프레임셋" loading="lazy"></figure>
+      <div class="reveal">
+        <span class="eyebrow">SIZED BY WHEEL</span>
+        <h3>작은 사이즈는 650B,<br>큰 사이즈는 700C</h3>
+        <p>46부터 52까지는 650B, 54부터 64까지는 700C 휠을 기준으로 설계했습니다. 사이즈마다 체형에 맞는 휠을 골라 작은 프레임에서도 자연스러운 비율을 유지합니다.</p>
+        <p>650B 사이즈는 26인치×50mm, 700C 사이즈는 650B×50mm 휠도 쓸 수 있어 한 대로 휠셋을 바꿔 가며 탈 수 있습니다.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="rail-hint reveal"><div><span class="eyebrow">GALLERY</span><p class="sub-head">More gravel than pavement<span>Subtropic Algae · Shaggy Carpet · Hi-Viz Black</span></p></div><span>DRAG →</span></div>
+  </div>
+  <div class="strip reveal" data-drag data-gallery="straggler">
+    <figure><img src="images/straggler/02.jpg" alt="설리 스트래글러 1" loading="lazy"><figcaption>01</figcaption></figure>
+    <figure><img src="images/straggler/03.jpg" alt="설리 스트래글러 2" loading="lazy"><figcaption>02</figcaption></figure>
+    <figure><img src="images/straggler/04.jpg" alt="설리 스트래글러 3" loading="lazy"><figcaption>03</figcaption></figure>
+    <figure><img src="images/straggler/05.jpg" alt="설리 스트래글러 4" loading="lazy"><figcaption>04</figcaption></figure>
+    <figure><img src="images/straggler/06.jpg" alt="설리 스트래글러 5" loading="lazy"><figcaption>05</figcaption></figure>
+    <figure><img src="images/straggler/07.jpg" alt="설리 스트래글러 6" loading="lazy"><figcaption>06</figcaption></figure>
+    <figure><img src="images/straggler/08.jpg" alt="설리 스트래글러 7" loading="lazy"><figcaption>07</figcaption></figure>
+    <figure><img src="images/straggler/09.jpg" alt="설리 스트래글러 8" loading="lazy"><figcaption>08</figcaption></figure>
+    <figure><img src="images/straggler/10.jpg" alt="설리 스트래글러 9" loading="lazy"><figcaption>09</figcaption></figure>
+  </div>
+  <div class="wrap gap-l">
+    <div class="studio reveal" data-gallery="straggler-studio">
+      <figure class="zoom"><img src="images/straggler/side.jpg" alt="설리 스트래글러 하이비즈 블랙" loading="lazy"><figcaption>CUES · HI-VIZ BLACK</figcaption></figure>
+      <figure class="zoom"><img src="images/straggler/side-algae.jpg" alt="설리 스트래글러 서브트로픽 알게" loading="lazy"><figcaption>GRX · SUBTROPIC ALGAE</figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="spec">
+      <div class="reveal">
+        <h3 class="sub-head">Straggler<span>SPECIFICATION</span></h3>
+        <div class="tabs"><button class="on" data-tab="spec-straggler-frame">FRAMESET</button><button data-tab="spec-straggler-complete">COMPLETE</button></div>
+        <a class="btn" href="https://rubiworkshop.com/models" target="_blank" rel="noopener">스트래글러 상담하기 →</a>
+      </div>
+      <div class="reveal">
+        <table class="geo-panel" id="spec-straggler-frame">
+          <tr><th>프레임</th><td>4130 크로몰리 (Natch 튜빙), 더블 버티드 메인 트라이앵글, TIG 용접, ED 코팅</td></tr>
+          <tr><th>포크</th><td>4130 크로몰리, 러그 브레이징, 오프셋 44mm, 랙 · 펜더 마운트</td></tr>
+          <tr><th>타이어</th><td>650B×50mm (46~52) / 700C×50mm (54~64), 펜더 장착 시 47mm</td></tr>
+          <tr><th>액슬</th><td>앞 12×100mm / 뒤 12×142mm 스루액슬 (포함)</td></tr>
+          <tr><th>브레이크</th><td>플랫 마운트, 로터 최대 160mm</td></tr>
+          <tr><th>헤드셋</th><td>ZS44/28.6 · EC44/30, 1-1/8" 스티어러</td></tr>
+          <tr><th>바텀브라켓</th><td>68mm BSA</td></tr>
+          <tr><th>시트포스트</th><td>27.2mm, 드로퍼 내부 라우팅, 시트 클램프 30.0mm</td></tr>
+          <tr><th>체인링</th><td>1x 46T / 2x 50/34T (최대)</td></tr>
+          <tr><th>마운트</th><td>보틀 2 + 쓰리팩 1, 랙 · 펜더</td></tr>
+          <tr><th>사이즈</th><td>46 / 49 / 52 / 54 / 56 / 58 / 61 / 64</td></tr>
+          <tr><th>컬러</th><td>Hi-Viz Black / Subtropic Algae / Shaggy Carpet</td></tr>
+        </table>
+        <table class="geo-panel" id="spec-straggler-complete" hidden>
+          <tr><th>CUES</th><td>Hi-Viz Black / Shaggy Carpet · 시마노 CUES 1×11 (40T, 11-50T), CUES 유압 디스크, 설리 나드 41mm 타이어 · 12.4kg (56)</td></tr>
+          <tr><th>GRX</th><td>Subtropic Algae · 시마노 GRX 2×12 (46/30T, 11-36T), GRX 유압 디스크, 테라베일 워시번 650B×47 / 700C×45, 드로퍼 포스트 · 12.3kg (56)</td></tr>
+        </table>
+        <p class="note">스루액슬 신형 기준입니다. QR 방식의 이전 세대 스트래글러는 규격과 지오메트리가 다릅니다.</p>
+      </div>
+    </div>
+    <div class="gap-l reveal">
+      <span class="eyebrow">FIT &amp; GEOMETRY</span>
+      <p class="sub-head" style="margin-bottom:28px">Find your size<span>단위 mm, 각도 ° · 46~52 650B, 54~64 700C</span></p>
+      <div class="geo-wrap">{{GEO_STRAGGLER}}</div>
+      <p class="note">권장 신장은 설리 공식 가이드입니다. 정확한 사이즈는 루비워크샵 피팅 상담으로 안내해 드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 DISC TRUCKER ===== -->
+<section class="sec" id="trucker" data-sec>
+  <div class="wrap">
+    <div class="label reveal">05</div>
+    <h2 class="sec-title reveal">Disc<br>Trucker<span>디스크 트러커 · LOADED TOURING</span></h2>
+    <div class="cols-2">
+      <p class="lead reveal">짐을 가득 싣고,<br>세계 어디든<br>계속 달리는 자전거.</p>
+      <div class="body reveal">
+        <p>디스크 트러커(Disc Trucker)는 설리의 정통 드롭바 투어링 바이크입니다. 대부분 포장된 길을 따라 무거운 짐을 싣고 대륙을 횡단하거나 세계를 일주하도록 만들었고, 그 안정감과 내구성은 수많은 장거리 여행으로 검증되었습니다.</p>
+        <p>림 브레이크 투어러 롱 홀 트러커의 디스크 브레이크 버전으로 2012년에 나왔고, 2020년에 지금의 모습으로 새로 설계되었습니다. 짐을 싣는 능력과 차분한 주행 감각 덕분에 출퇴근과 장보기 같은 일상에도 잘 맞습니다.</p>
+      </div>
+    </div>
+  </div>
+  <figure class="full gap-l reveal zoom" data-gallery="trucker-wide"><img src="images/trucker/wide.jpg" alt="패니어를 가득 실은 설리 디스크 트러커" loading="lazy"></figure>
+  <div class="wrap gap-l">
+    <div class="feat4">
+      <div class="reveal"><h4>짐을 위한 포크</h4><p>쓰리팩 마운트 2세트, 상·중·하단 랙 마운트, 펜더 마운트, 다이나모 라우팅까지 갖춘 크로몰리 포크입니다.</p></div>
+      <div class="reveal"><h4>슬롯 스루액슬</h4><p>앞뒤 12mm 스루액슬. 논드라이브 쪽이 슬롯 구조라 액슬을 완전히 빼지 않고도 휠을 뺄 수 있습니다.</p></div>
+      <div class="reveal"><h4>스포크 홀더 · 킥스탠드</h4><p>시트스테이의 여분 스포크 홀더와 킥스탠드 플레이트. 길 위에서 필요한 것을 프레임에 담았습니다.</p></div>
+      <div class="reveal"><h4>넓은 기어 범위</h4><p>1x 47T, 2x 50/34T, 3x 56/47/33T까지 대응. 짐을 싣고 오르는 긴 언덕에 맞춰 기어를 구성할 수 있습니다.</p></div>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="row flip">
+      <figure class="reveal zoom" data-gallery="trucker-row"><img src="images/trucker/01.jpg" alt="26인치와 700C 설리 디스크 트러커" loading="lazy"></figure>
+      <div class="reveal">
+        <span class="eyebrow">26" OR 700C</span>
+        <h3>휠 크기도<br>사이즈의 일부입니다</h3>
+        <p>디스크 트러커는 42부터 54까지 26인치, 56부터 64까지 700C 휠을 씁니다. 설리는 휠 크기를 핏의 문제로 봅니다. 휠이 바뀌면 콕핏 길이와 스티어링 각도, 발끝 간섭이 함께 달라지기 때문입니다.</p>
+        <p>두 휠 모두 47mm급 타이어가 들어가고, 펜더를 달아도 클리어런스가 그대로입니다. 26인치는 세계 여러 곳에서 타이어와 튜브를 구하기 쉬워 장거리 여행에서도 든든한 선택입니다.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="rail-hint reveal"><div><span class="eyebrow">GALLERY</span><p class="sub-head">Keep on truckin'<span>Grandpa's Khakis · 26" · 700C</span></p></div><span>DRAG →</span></div>
+  </div>
+  <div class="strip reveal" data-drag data-gallery="trucker">
+    <figure><img src="images/trucker/02.jpg" alt="설리 디스크 트러커 1" loading="lazy"><figcaption>01</figcaption></figure>
+    <figure><img src="images/trucker/03.jpg" alt="설리 디스크 트러커 2" loading="lazy"><figcaption>02</figcaption></figure>
+    <figure><img src="images/trucker/04.jpg" alt="설리 디스크 트러커 3" loading="lazy"><figcaption>03</figcaption></figure>
+    <figure><img src="images/trucker/05.jpg" alt="설리 디스크 트러커 4" loading="lazy"><figcaption>04</figcaption></figure>
+    <figure><img src="images/trucker/06.jpg" alt="설리 디스크 트러커 5" loading="lazy"><figcaption>05</figcaption></figure>
+    <figure><img src="images/trucker/07.jpg" alt="설리 디스크 트러커 6" loading="lazy"><figcaption>06</figcaption></figure>
+    <figure><img src="images/trucker/08.jpg" alt="설리 디스크 트러커 7" loading="lazy"><figcaption>07</figcaption></figure>
+    <figure><img src="images/trucker/09.jpg" alt="설리 디스크 트러커 8" loading="lazy"><figcaption>08</figcaption></figure>
+    <figure><img src="images/trucker/10.jpg" alt="설리 디스크 트러커 9" loading="lazy"><figcaption>09</figcaption></figure>
+  </div>
+  <div class="wrap gap-l">
+    <div class="studio reveal" data-gallery="trucker-studio">
+      <figure class="zoom"><img src="images/trucker/side.jpg" alt="설리 디스크 트러커 700C 그랜파스 카키" loading="lazy"><figcaption>700C · GRANDPA'S KHAKIS</figcaption></figure>
+      <figure class="zoom"><img src="images/trucker/side-26.jpg" alt="설리 디스크 트러커 26인치 그랜파스 카키" loading="lazy"><figcaption>26" · GRANDPA'S KHAKIS</figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap gap-l">
+    <div class="spec">
+      <div class="reveal">
+        <h3 class="sub-head">Disc Trucker<span>SPECIFICATION</span></h3>
+        <div class="tabs"><button class="on" data-tab="spec-trucker-frame">FRAMESET</button><button data-tab="spec-trucker-complete">COMPLETE</button></div>
+        <a class="btn" href="https://rubiworkshop.com/models" target="_blank" rel="noopener">디스크 트러커 상담하기 →</a>
+      </div>
+      <div class="reveal">
+        <table class="geo-panel" id="spec-trucker-frame">
+          <tr><th>프레임</th><td>크로몰리 스틸 (Natch 튜빙), 더블 버티드 메인 트라이앵글, TIG 용접, ED 코팅</td></tr>
+          <tr><th>포크</th><td>4130 크로몰리, 러그 브레이징, A-C 376mm (26") / 390mm (700C), 쓰리팩 마운트 2세트, 랙 · 펜더 마운트, 다이나모 라우팅</td></tr>
+          <tr><th>타이어</th><td>26×2.1" / 700C×47mm (최대, 펜더 장착 시에도 동일)</td></tr>
+          <tr><th>액슬</th><td>앞 12×100mm / 뒤 12×142mm 스루액슬 (포함)</td></tr>
+          <tr><th>브레이크</th><td>플랫 마운트, 140/160mm 로터 마운트</td></tr>
+          <tr><th>헤드셋</th><td>EC34/28.6 · EC34/30, 1-1/8" 스티어러</td></tr>
+          <tr><th>바텀브라켓</th><td>68mm BSA</td></tr>
+          <tr><th>시트포스트</th><td>27.2mm, 시트 클램프 30.0mm</td></tr>
+          <tr><th>체인링</th><td>1x 47T / 2x 50/34T / 3x 56/47/33T (최대)</td></tr>
+          <tr><th>마운트</th><td>보틀 3, 앞뒤 펜더, 리어 랙, 스포크 홀더</td></tr>
+          <tr><th>사이즈</th><td>26" 42 / 46 / 50 / 52 / 54 · 700C 56 / 58 / 60 / 62 / 64</td></tr>
+          <tr><th>컬러</th><td>Grandpa's Khakis</td></tr>
+        </table>
+        <table class="geo-panel" id="spec-trucker-complete" hidden>
+          <tr><th>700C</th><td>Grandpa's Khakis · 시마노 CUES 2×10 (46/30T, 11-39T), CUES 디스크 브레이크 (180mm 로터), 설리 엑스트라테레스트리얼 700×41mm, 설리 트럭 스톱 바 · 13.5kg (56)</td></tr>
+          <tr><th>26"</th><td>Grandpa's Khakis · 같은 구성, 설리 엑스트라테레스트리얼 26×46mm · 12.9kg (52)</td></tr>
+        </table>
+        <p class="note">완성차에는 킥스탠드 플레이트가 포함됩니다. 국내 입고 사양은 루비워크샵에 문의해 주세요.</p>
+      </div>
+    </div>
+    <div class="gap-l reveal">
+      <span class="eyebrow">FIT &amp; GEOMETRY</span>
+      <p class="sub-head" style="margin-bottom:28px">Find your size<span>단위 mm, 각도 ° · 42~54 26인치, 56~64 700C</span></p>
+      <div class="geo-wrap">{{GEO_TRUCKER}}</div>
+      <p class="note">권장 신장은 설리 공식 가이드 그대로이며, 56과 58은 같은 범위로 표기되어 있습니다. 정확한 사이즈는 루비워크샵 피팅 상담으로 안내해 드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 SHOWROOM ===== -->
+<section class="sec" id="showroom" data-sec>
+  <div class="wrap">
+    <div class="label reveal">06</div>
+    <h2 class="sec-title reveal">Showroom<span>FIND YOUR SURLY</span></h2>
+    <figure class="reveal zoom" data-gallery="showroom"><img src="images/brand/03.jpg" alt="드롭바 설리를 타고 윌리를 하는 라이더" loading="lazy" style="aspect-ratio:21/9;object-fit:cover"></figure>
+    <div class="showinfo gap-m">
+      <div class="reveal">
+        <h3>Let's build<br>your Surly.</h3>
+        <p>설리는 완성차와 프레임셋으로 나옵니다. 어디를 어떻게 달리고 무엇을 싣고 싶은지 들려주세요. 루비워크샵이 모델과 사이즈 선택부터 휠, 구동계, 랙과 백까지 쓰임에 맞는 한 대를 함께 완성합니다.</p>
+      </div>
+      <div class="reveal">
+        <dl class="info">
+          <dt>ADDRESS</dt><dd><strong>서울특별시 서초구 신반포로 320 루비빌딩</strong><br>루비워크샵</dd>
+          <dt>HOURS</dt><dd>월~금 12:00~18:00</dd>
+          <dt>CALL</dt><dd><strong>1551-5320</strong></dd>
+          <dt>EMAIL</dt><dd>help@rubi.kr</dd>
+          <dt>WARRANTY</dt><dd>설리 프레임 3년 보증 (최초 구매자, 공식 판매처 구매 기준)</dd>
+        </dl>
+        <a class="btn" href="https://rubiworkshop.com/models" target="_blank" rel="noopener">설리 상담 예약하기 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="wrap">
+    <div>
+      <h5>SURLY · RUBI WORKSHOP</h5>
+      <b>루비컴퍼니</b> (RUBI COMPANY) ㅣ <b>대표</b> : 권오현<br>
+      서울특별시 서초구 신반포로 320 루비빌딩<br>
+      <b>사업자등록번호</b> 685-05-00242 ㅣ <b>통신판매번호</b> 2016-서울서초-2062<br>
+      <b>고객센터</b> 1551-5320 (월~금 12:00~18:00)<br>
+      <b>이메일</b> <a href="mailto:help@rubi.kr">help@rubi.kr</a>
+    </div>
+    <div class="sns">
+      <a href="https://instagram.com/rubi.workshop" target="_blank" rel="noopener">INSTAGRAM</a>
+      <a href="https://rubiworkshop.com/" target="_blank" rel="noopener">RUBI WORKSHOP</a>
+      <a href="https://surlybikes.com/" target="_blank" rel="noopener">SURLY GLOBAL</a>
+    </div>
+  </div>
+  <div class="wrap copy">Copyright ⓒ 2026 루비컴퍼니. Surly는 Quality Bicycle Products의 브랜드입니다.</div>
+</footer>
+
+<!-- ===== Lightbox ===== -->
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <img alt="">
+  <button class="cl" aria-label="닫기">CLOSE</button>
+  <button class="pv" aria-label="이전">←</button>
+  <button class="nx" aria-label="다음">→</button>
+  <div class="ct"></div>
+</div>
+
+<script>
+(() => {
+  /* Header & menu */
+  const body = document.body;
+  document.getElementById('burger').onclick = () => body.classList.toggle('menu-open');
+  document.querySelectorAll('#menu a').forEach(a => a.onclick = () => body.classList.remove('menu-open'));
+  addEventListener('keydown', e => { if (e.key === 'Escape') { body.classList.remove('menu-open'); closeLb(); } });
+
+  /* Logo fallback (before images are fetched) */
+  const logo = document.querySelector('.hd .logo img');
+  logo.addEventListener('error', () => { logo.replaceWith(Object.assign(document.createElement('span'), {textContent:'SURLY', style:'font:700 22px var(--en);letter-spacing:3px;color:#fff'})); });
+
+  /* Hero slideshow (image + caption pairs) */
+  const slides = [...document.querySelectorAll('.slide')], caps = [...document.querySelectorAll('.hero .cap')], idx = document.getElementById('heroIdx');
+  let cur = 0, timer;
+  idx.innerHTML = slides.map((_,i) => `<button aria-label="${i+1}"><i></i></button>`).join('');
+  const bars = [...idx.children];
+  const go = n => {
+    slides[cur].classList.remove('on'); caps[cur].classList.remove('on'); bars[cur].classList.remove('on');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('on'); caps[cur].classList.add('on');
+    void bars[cur].offsetWidth; bars[cur].classList.add('on');
+    clearTimeout(timer); timer = setTimeout(() => go(cur + 1), 6000);
+  };
+  bars.forEach((b,i) => b.onclick = () => go(i));
+  go(0);
+
+  /* Reveal on scroll */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* Active section → dots & menu */
+  const secs = [...document.querySelectorAll('[data-sec]')];
+  const dots = [...document.querySelectorAll('#dots a')], links = [...document.querySelectorAll('#menu a')];
+  const spy = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const id = '#' + e.target.id;
+    dots.forEach(d => d.classList.toggle('on', d.getAttribute('href') === id));
+    links.forEach(l => l.classList.toggle('on', l.getAttribute('href') === id));
+  }), {rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(s => spy.observe(s));
+
+  /* Spec tabs */
+  document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
+    b.parentElement.querySelectorAll('button').forEach(x => { x.classList.toggle('on', x === b); document.getElementById(x.dataset.tab).hidden = x !== b; });
+  });
+
+  /* Drag to scroll (rails) */
+  let moved = false;
+  document.querySelectorAll('[data-drag]').forEach(strip => {
+    let down = false, sx = 0, sl = 0;
+    strip.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = strip.scrollLeft; strip.classList.add('drag'); });
+    addEventListener('pointermove', e => { if (!down) return; const dx = e.clientX - sx; if (Math.abs(dx) > 4) moved = true; strip.scrollLeft = sl - dx; });
+    addEventListener('pointerup', () => { down = false; strip.classList.remove('drag'); });
+  });
+
+  /* Lightbox */
+  const lb = document.getElementById('lb'), lbImg = lb.querySelector('img'), lbCt = lb.querySelector('.ct');
+  let set = [], li = 0;
+  const show = () => { lbImg.src = set[li]; lbCt.textContent = `${li+1} / ${set.length}`; };
+  function closeLb(){ lb.classList.remove('on'); }
+  document.querySelectorAll('[data-gallery]').forEach(g => g.addEventListener('click', e => {
+    const img = e.target.closest('figure')?.querySelector('img'); if (!img || moved) return;
+    set = [...g.querySelectorAll('img')].map(i => i.src); li = set.indexOf(img.src); show(); lb.classList.add('on');
+  }));
+  lb.querySelector('.cl').onclick = closeLb;
+  lb.querySelector('.pv').onclick = e => { e.stopPropagation(); li = (li - 1 + set.length) % set.length; show(); };
+  lb.querySelector('.nx').onclick = e => { e.stopPropagation(); li = (li + 1) % set.length; show(); };
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  addEventListener('keydown', e => { if (!lb.classList.contains('on')) return; if (e.key === 'ArrowLeft') lb.querySelector('.pv').click(); if (e.key === 'ArrowRight') lb.querySelector('.nx').click(); });
+})();
+</script>
+<script>
+/* GA4 events (shared across Rubi Company brand sites). Sends nothing while GA_ID is empty.
+   section_view, consulting_click, language_switch, social_click, image_view */
+(function(){
+  var lang = document.documentElement.lang || 'ko';
+  function track(name, params){ if (window.GA_ID && typeof gtag === 'function') gtag('event', name, params || {}); }
+  function where(a){
+    if (a.getAttribute('data-ga')) return a.getAttribute('data-ga');
+    if (a.closest('header')) return 'header';
+    if (a.closest('#menu, .menu')) return 'menu';
+    if (a.closest('footer')) return 'footer';
+    var s = a.closest('section[id], [data-sec][id]');
+    return s ? s.id : 'other';
+  }
+  if ('IntersectionObserver' in window) {
+    var seen = {};
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){
+      var id = e.target.id;
+      if (!e.isIntersecting || seen[id] || !window.GA_ID) return;
+      seen[id] = 1; track('section_view', { section_name: id });
+    }); }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('section[id], [data-sec][id]').forEach(function(s){ if (s.id !== 'top') io.observe(s); });
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target, a = t.closest && t.closest('a');
+    if (a) {
+      var href = a.getAttribute('href') || '';
+      if (/rubiworkshop\.com\/models/.test(href)) return track('consulting_click', { link_location: where(a) });
+      var to = a.getAttribute('hreflang') || a.getAttribute('data-lang');
+      if (to && a.closest('.lang')) { if (to !== lang) track('language_switch', { from: lang, to: to }); return; }
+      var m = href.match(/instagram|kakao|youtube/);
+      if (m) track('social_click', { network: m[0], link_location: where(a) });
+      return;
+    }
+    var g = t.closest && t.closest('[data-gallery]');
+    if (g && t.closest('figure')) track('image_view', { gallery: g.getAttribute('data-gallery') || g.id || 'gallery' });
+  }, true);
+})();
+</script>
+</body>
+</html>
