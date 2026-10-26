@@ -129,6 +129,8 @@ body.menu-open .menu{opacity:1;visibility:visible}
 .menu a{font:700 clamp(34px,6vw,76px)/1.12 var(--en);text-transform:uppercase;letter-spacing:-1px;color:#c9c4ba;transition:color .25s;max-width:100%}
 .menu a:hover,.menu a.on{color:var(--accent)}
 .menu a small{font:500 13px var(--en);letter-spacing:2px;vertical-align:top;margin-right:14px;color:var(--muted)}
+.menu a .ext{display:inline-block;font-size:.5em;vertical-align:top;margin-left:10px;transition:transform .25s}
+.menu a:hover .ext{transform:translate(3px,-3px)}
 .menu .menu-foot{position:absolute;bottom:40px;left:var(--gutter);font:500 12px var(--en);letter-spacing:1px;color:var(--muted)}
 
 /* ---------- Dot nav ---------- */
@@ -347,6 +349,7 @@ footer .copy{margin-top:28px;font-size:12px}
   <a href="#straggler"><small>04</small>Straggler</a>
   <a href="#trucker"><small>05</small>Disc Trucker</a>
   <a href="#showroom"><small>06</small>Showroom</a>
+  <a href="https://rubiworkshop.com/lookbook?category=1468HL6E30" target="_blank" rel="noopener"><small>07</small>Lookbook<span class="ext" aria-hidden="true">↗</span></a>
   <div class="menu-foot">SURLY · RUBI WORKSHOP</div>
 </nav>
 
@@ -964,6 +967,7 @@ footer .copy{margin-top:28px;font-size:12px}
     if (a) {
       var href = a.getAttribute('href') || '';
       if (/rubiworkshop\.com\/models/.test(href)) return track('consulting_click', { link_location: where(a) });
+      if (/rubiworkshop\.com\/lookbook/.test(href)) return track('lookbook_click', { link_location: where(a) });
       var to = a.getAttribute('hreflang') || a.getAttribute('data-lang');
       if (to && a.closest('.lang')) { if (to !== lang) track('language_switch', { from: lang, to: to }); return; }
       var m = href.match(/instagram|kakao|youtube/);

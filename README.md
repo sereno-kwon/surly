@@ -31,6 +31,7 @@ surly.rubiworkshop.com 원페이지 정적 사이트 (GitHub Pages). crustbikes.
 - 이벤트
   - `section_view` 섹션 도달 (section_name), 섹션별 1회
   - `consulting_click` 상담 링크(rubiworkshop.com/models) 클릭 (link_location: header, menu, 섹션 id, footer)
+  - `lookbook_click` 메뉴의 룩북 링크(rubiworkshop.com/lookbook, 설리 카테고리) 클릭 (link_location)
   - `language_switch` 언어 전환 (from, to)
   - `social_click` 인스타그램·카카오·유튜브 클릭 (network, link_location)
   - `image_view` 사진 확대 보기 (gallery)
